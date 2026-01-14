@@ -44,7 +44,7 @@ tags_overview: false
 #   - sort_updated: sort posts by last modification date instead of creation date.
 posts_overview:
   show_all_posts: false
-  post_count: 5
+  post_count: 7
   sort_updated: false
 
 # Customize the archive view.
@@ -65,7 +65,7 @@ post:
 # Note: if start_year/end_year not provided, will use current year.
 copyright:
   start_year: 2026
-  end_year:
+  end_year: NOW
 
 # Customize the 404 page
 # Options:
@@ -151,7 +151,7 @@ open_graph:
 
 # Enable MathJax support for Latex
 mathjax:
-  enabled: false
+  enabled: true
 
 # Fill in your Disqus Comments Shortname to enable Disqus comments.
 disqus:

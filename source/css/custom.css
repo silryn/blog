@@ -2,3 +2,15 @@
 html {
   border-top: none !important;
 }
+
+/* Add bottom padding on mobile to prevent content being hidden by fixed nav */
+@media screen and (max-width: 499px) {
+  .content {
+    padding-bottom: 250px;
+  }
+
+  /* Move theme toggle button above mobile nav */
+  #theme-toggle {
+    bottom: 80px !important;
+  }
+}
