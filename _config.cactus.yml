@@ -5,7 +5,7 @@
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: http://github.com/probberechts
+projects_url: https://github.com/silryn
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -14,39 +14,24 @@ direction: ltr
 # navigation menu. Optionally, you can add translations for the 'Key' in
 # languages/*.yml
 nav:
-  home: /
-  about: /about/
-  articles: /archives/
-  projects: http://github.com/probberechts
+  Home: /
+  About: /about/
+  Articles: /archives/
+  Search: /search/
+  Projects: https://github.com/silryn
 
 
 # Links to your social media accounts.
 # The 'icon' keys should correspond to Fontawesome icon names
 # (see https://fontawesome.com/icons?d=gallery&s=brands);
 # only 'mail' is an exception.
-# You can optionally add a 'label' key to set the title attribute on the link.
+# You can optionally add a 'label' key to set the title attribute on the link. 
 # 'icon' value will be used as title when 'label' is missing.
 social_links:
-  -
-    icon: github
-    link: http://github.com/probberechts/cactus-dark
-  -
-    icon: twitter
-    link: /
-  -
-    icon: facebook
-    link: /
-  -
-    icon: mail
-    link: mailto:name@email.com
-  -
-    icon: mastodon
-    label: mastodon.social
-    link: https://mastodon.social/@alice
-  -
-    icon: mastodon
-    label: fosstodon.org
-    link: https://fosstodon.org/@alice
+  - icon: github
+    link: https://github.com/silryn
+  - icon: mail
+    link: mailto:hi@silryn.com
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
@@ -79,7 +64,7 @@ post:
 # Customize the copyright years
 # Note: if start_year/end_year not provided, will use current year.
 copyright:
-  start_year: 2016
+  start_year: 2026
   end_year:
 
 # Customize the 404 page
@@ -137,6 +122,7 @@ favicon:
 
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
+# To switch between color schemes, change the value below and rebuild your site.
 # Alternatively, add your own custom color scheme to source/css/_colors.
 colorscheme: dark
 

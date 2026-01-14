@@ -1,0 +1,4 @@
+/* Remove the top border line */
+html {
+  border-top: none !important;
+}
