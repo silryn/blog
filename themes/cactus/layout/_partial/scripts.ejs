@@ -41,41 +41,6 @@
   </script>
 <% } %>
 <%- js('js/main') %>
-<!-- Theme Switcher -->
-<script type="text/javascript">
-(function() {
-  const themes = ['dark', 'light', 'classic'];
-  const themeToggle = document.getElementById('theme-toggle');
-
-  // Get saved theme or default to 'dark'
-  let currentTheme = localStorage.getItem('theme') || 'dark';
-
-  // Function to switch themes
-  function switchTheme(theme) {
-    themes.forEach(t => {
-      const link = document.getElementById(`theme-${t}`);
-      if (link) {
-        link.disabled = (t !== theme);
-      }
-    });
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-  }
-
-  // Apply saved theme on load
-  switchTheme(currentTheme);
-
-  if (themeToggle) {
-    themeToggle.addEventListener('click', function(e) {
-      e.preventDefault();
-      const currentIndex = themes.indexOf(currentTheme);
-      const nextIndex = (currentIndex + 1) % themes.length;
-      currentTheme = themes[nextIndex];
-      switchTheme(currentTheme);
-    });
-  }
-})();
-</script>
 <!-- search -->
 <% if (config.search && (page.search || page.type === "search")){ %>
   <%- js('js/search.js') %>
