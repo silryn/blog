@@ -32,6 +32,26 @@ jobs:
       - name: Install dependencies
         run: bun install
 
+      - name: Update about.md with build info
+        run: |
+          COMMIT_HASH=$(git rev-parse --short HEAD)
+          BUILD_TIME=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          BRANCH_NAME=${GITHUB_REF#refs/heads/}
+          WORKFLOW_RUN_ID=${GITHUB_RUN_ID}
+
+          if [ -f "source/about/index.md" ]; then
+            cat >> source/about/index.md << EOF
+
+
+          ## Build Information
+
+          - **Last Updated**: ${BUILD_TIME}
+          - **Git Commit Hash**: \`${COMMIT_HASH}\`
+          - **Build Branch**: \`${BRANCH_NAME}\`
+          - **Workflow Run**: [${WORKFLOW_RUN_ID}](https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID})
+          EOF
+          fi
+
       - name: Build
         run: bun run build
 
