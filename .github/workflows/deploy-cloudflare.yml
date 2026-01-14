@@ -60,7 +60,7 @@ jobs:
         run: |
           echo "Attempting to deploy to Cloudflare Pages..."
           set +e
-          bunx wrangler pages deploy dist --project-name="$CLOUDFLARE_PAGES_NAME"
+          bunx wrangler pages deploy dist --project-name="$CLOUDFLARE_PAGES_NAME" --commit-dirty=true
           DEPLOY_STATUS=$?
           set -e
 

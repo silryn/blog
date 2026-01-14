@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate",
+    "build": "hexo generate && cp source/images/favicon.ico dist/images/ && cp source/images/logo.png dist/images/",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server"
