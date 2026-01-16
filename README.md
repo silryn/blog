@@ -238,6 +238,6 @@ bun run build
 
 ## Links
 
-- **Blog**: https://www.silryn.com
+- **Blog**: https://blog.silryn.com
 - **Hexo**: https://hexo.io/
 - **Cactus Theme**: https://github.com/probberechts/hexo-theme-cactus
