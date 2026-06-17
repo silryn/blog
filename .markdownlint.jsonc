@@ -1,0 +1,20 @@
+{
+  // Line length: Chinese paragraphs are naturally long; disable.
+  "MD013": false,
+
+  // First line of file does not need to be a top-level heading;
+  // Hexo derives the H1 from front matter `title`.
+  "MD041": false,
+
+  // Allow inline HTML for occasional <br>, <details>, etc.
+  "MD033": false,
+
+  // Allow duplicate headings across sections (e.g. multiple "## Intro").
+  "MD024": { "siblings_only": true },
+
+  // Bare URLs are OK in casual writing.
+  "MD034": false,
+
+  // Allow emphasis used as headings (Chinese authors often do this).
+  "MD036": false
+}

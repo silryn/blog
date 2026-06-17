@@ -6,4 +6,3 @@ node_modules/
 dist/
 .deploy*/
 _multiconfig.yml
-bun.lockb

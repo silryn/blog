@@ -5,11 +5,11 @@
 # Site
 title: Silryn's Blog
 subtitle: 'A heart long at ease, flowing like a clear, tranquil stream.'
-description: ''
-keywords:
+description: 'Silryn 的个人博客 — 关于生活、文字、技术与缓慢思考的随笔。'
+keywords: 'Silryn,blog,随笔,生活,写作,技术'
 author: Silryn
-language: en
-timezone: ''
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
